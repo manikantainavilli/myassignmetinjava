@@ -1,0 +1,86 @@
+<html>
+
+    <head>
+        <title>learningjs</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    </head>
+
+
+    <body>
+
+        <!-- <h1 id="demo" style="color: red;" >Manikanta and vijaya learnin javascript</h1> -->
+
+        <button onclick="changecontent(10000,200000)">click to change content</button>
+
+        <h2 id="tag_sample_id" class="tag_sample_class">commputer and laptops are same category</h2>
+
+
+    </body>
+
+
+    <script>
+        function changecontent(a,b){
+            // alert("are you really want to remoe this product");
+            // document.getElementById("mani").innerHTML = "Mani is from kota uratla"
+            // document.getElementById("demo").style = "color : green";
+
+
+            var tag = document.getElementsByClassName("tag_sample_class");
+
+            console.log(tag)
+
+            // i want to send data to backend
+
+            // var name = "manikanta";
+            // var height = 5.10;
+            // var weight = 60;
+            // var hair_color = "black";
+            // var qualification = "b-tech";
+            // var mobileno = 9573967192;
+            // var jama_obj = {a:1,b:30}
+            // var mani_obj = {cars : [1,2,3,4],height : [1,2,3,4],weight:[34,5,6],hair_color :['a','b','c'],name:jama_obj}
+
+            var cars = ["marutid","rolceroys"]
+            // var persons = []
+            // var animals = []
+
+
+            var venkat = 10;
+            var manikanta = "hello"
+            var vijaa = 1.4
+
+            // console.log(typeof(venkat));
+            // console.log(typeof(manikanta));
+            // console.log(typeof(vijaa));
+
+
+            // console.log(cars.length);
+
+            // console.log(a);
+            // console.log(b);
+
+            json_mankanta_obj = {
+                                    "family_details":[ 
+
+                                                    {"name":"manikanta", "age":"28","graduation":"b-tech"},
+                                                    {"name":"venkat", "age":"24","graduation":"b-tech"},
+                                                    {"name":"vijaya", "age":"20","graduation":"degree"},
+                                         
+                                                ],
+                                    "car_details":[ 
+                                        
+                                                    {"name":"maruthi", "price":"500k","color":"red"},
+                                                    {"name":"dotson", "price":"600k","color":"black"},
+                                                    {"name":"kia", "price":"700k","color":"whit"},
+                                                ],
+                                    
+                                    "salaries" : [10,20,30],
+
+                                    "married" :false
+                                    
+                                }
+
+            // console.log(json_mankanta_obj);
+        }
+    </script>
+</html>
