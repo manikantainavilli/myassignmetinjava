@@ -1,0 +1,51 @@
+<html>
+    <head>
+        <style>
+            .manikanta{max-width: 500px;
+  margin: auto;
+  background:blue;
+  padding: 10px;
+            }
+        </style>
+
+    </head>
+    <body>
+        <div class="manikanta">
+        <form action="newreg.html" method="post">
+        First Name:<input type="text" id="fname"><br></br>
+        <p id="demo"></p>
+        Last Name:<input type="text" name="lname"><br></br>
+        Father Name:<input type="text" name="faname"><br></br>
+        Village:<input type="text" name="village"><br></br>
+        District:<select><option ></option>
+            <option value="East Godavari">East Godavari</option>
+            <option value="West Godavari">West Godavari</option>
+            <option value="Visakha">Visakha</option></select><br></br>
+        Pin:
+        <select><option ></option>
+            <option value="East Godavari">East Godavari</option>
+            <option value="West Godavari">West Godavari</option>
+            <option value="Visakha">Visakha</option></select><br></br>
+        Phone:<select><option ></option>
+            <option value="+91">+91</option>
+            <option value="+92">+92</option>
+            <option value="+93">+93</option><input type="phone" name="phone"><br></br>
+        <button onclick =validate() type="submit" value="submit">submit</button><br></br>
+      </form>
+      </div>
+    
+      <script type="text/javascript">
+          function validate(){
+              var mani=document.getElementById("fname");
+              var b=document.getElementById("lname");
+              var c=document.getElementById("faname");
+              var d=document.getElementById("district");
+              if(mani.value ==""){
+                  document.getElementById("demo").innerHTML="Fill the first name";
+              }
+
+          }
+      </script>
+      </body>
+    
+</html>
